@@ -11,10 +11,10 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Charts-legacy",
+            name: "ChartsLegacy",
             targets: ["Charts"]),
         .library(
-            name: "ChartsDynamic-legacy",
+            name: "ChartsDynamicLegacy",
             type: .dynamic,
             targets: ["Charts"])
     ],
