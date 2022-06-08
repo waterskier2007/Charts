@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Charts",
+    name: "ChartsLegacy",
     platforms: [
           .iOS(.v12),
           .tvOS(.v12),
