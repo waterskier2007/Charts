@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ChartsLegacy",
+    name: "ChartKit",
     platforms: [
           .iOS(.v12),
           .tvOS(.v12),
@@ -11,19 +11,19 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "ChartsLegacy",
-            targets: ["ChartsLegacy"]),
+            name: "ChartKit",
+            targets: ["ChartKit"]),
         .library(
-            name: "ChartsDynamicLegacy",
+            name: "ChartKitDynamic",
             type: .dynamic,
-            targets: ["ChartsLegacy"])
+            targets: ["ChartKit"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0")
     ],
     targets: [
         .target(
-            name: "ChartsLegacy",
+            name: "ChartKit",
             dependencies: [.product(name: "Algorithms", package: "swift-algorithms")],
             path: "Source/Charts"
         )
